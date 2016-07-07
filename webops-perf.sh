@@ -32,8 +32,7 @@ done
 
 #this part to download all the files listed in  filename.*
 
-#for i in $filename.* 
-#do
-#    wget -c -i  "$i" 
-# use "" to avoid the url containing space
-#done
+for i in $filename.* 
+do
+    wget -c -i  "$i"    # use "" to avoid the url containing spaces
+done
